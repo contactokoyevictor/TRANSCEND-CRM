@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/Users/okoyevictor/NetBeansProjects/TRANSCEND-CRM_CLOUD_TOMEE/src/java/com/sivotek/crm/xsd/SchedulerRequestResponse.xsd" uri="src/conf/xml-resources/jaxb/Response/SchedulerRequestResponse.xsd"/>
+    <system systemId="file:/Users/okoyevictor/NetBeansProjects/TRANSCEND-CRM_CLOUD_TOMEE/src/java/com/sivotek/crm/xsd/SchedulerRequest.xsd" uri="src/conf/xml-resources/jaxb/Request/SchedulerRequest.xsd"/>
+    <system systemId="file:/Users/okoyevictor/NetBeansProjects/TRANSCEND-CRM_CLOUD_TOMEE/src/java/com/sivotek/crm/xsd/TranscendResponse.xsd" uri="src/conf/xml-resources/jaxb/Response/TranscendResponse.xsd"/>
+    <system systemId="file:/Users/okoyevictor/NetBeansProjects/TRANSCEND-CRM_CLOUD_TOMEE/src/java/com/sivotek/crm/xsd/TranscendRequest.xsd" uri="src/conf/xml-resources/jaxb/Request/TranscendRequest.xsd"/>
+    <system systemId="file:/Users/okoyevictor/Desktop/TRANSCEND-CRM_CLOUD_TOMEE_WITHCOMPOSITE/../../NetBeansProjects/TRANSCEND-CRM_CLOUD_TOMEE/src/java/com/sivotek/crm/xsd/TranscendResponse.xsd" uri="src/conf/xml-resources/jaxb/Response/TranscendResponse.xsd"/>
+    <system systemId="file:/Users/okoyevictor/Desktop/TRANSCEND-CRM_CLOUD_TOMEE_WITHCOMPOSITE/../../NetBeansProjects/TRANSCEND-CRM_CLOUD_TOMEE/src/java/com/sivotek/crm/xsd/TranscendRequest.xsd" uri="src/conf/xml-resources/jaxb/Request/TranscendRequest.xsd"/>
+    <system systemId="file:/Users/okoyevictor/Desktop/TRANSCEND-CRM_CLOUD_TOMEE_WITHCOMPOSITE/src/java/com/sivotek/crm/xsd/TranscendResponse.xsd" uri="src/conf/xml-resources/jaxb/Response/TranscendResponse.xsd"/>
+    <system systemId="file:/Users/okoyevictor/Desktop/TRANSCEND-CRM_CLOUD_TOMEE_WITHCOMPOSITE/src/java/com/sivotek/crm/xsd/TranscendRequest.xsd" uri="src/conf/xml-resources/jaxb/Request/TranscendRequest.xsd"/>
+    <system systemId="file:/Users/okoyevictor/NetBeansProjects/TRANSCEND-CRM_CLOUD_TOMEE_WITHCOMPOSITE/src/java/com/sivotek/crm/xsd/TranscendResponse.xsd" uri="src/conf/xml-resources/jaxb/Response/TranscendResponse.xsd"/>
+    <system systemId="file:/Users/okoyevictor/NetBeansProjects/TRANSCEND-CRM_CLOUD_TOMEE_WITHCOMPOSITE/src/java/com/sivotek/crm/xsd/TranscendRequest.xsd" uri="src/conf/xml-resources/jaxb/Request/TranscendRequest.xsd"/>
+</catalog>

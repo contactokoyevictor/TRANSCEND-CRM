@@ -1,0 +1,10 @@
+package com.sivotek.crm.persistent.dao.entities.controllers.exceptions;
+
+public class RollbackFailureException extends Exception {
+    public RollbackFailureException(String message, Throwable cause) {
+        super(message, cause);
+    }
+    public RollbackFailureException(String message) {
+        super(message);
+    }
+}

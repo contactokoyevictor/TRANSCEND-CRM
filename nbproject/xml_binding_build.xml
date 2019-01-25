@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+            *** GENERATED FROM xml_binding_cfg.xml - DO NOT EDIT  ***
+            *** Configure thru JAXB Wizard.                       ***
+        --><project name="TRANSCEND-CRM_CLOUD_TOMEE_jaxb" default="default" basedir=".">
+    <target name="xjc-typedef-target" depends="-init-project">
+        <typedef xmlns:s="http://xml.netbeans.org/schema/JAXBWizConfig" name="xjc" classname="com.sun.tools.xjc.XJCTask">
+            <classpath path="${jaxbwiz.xjcdef.classpath}"/>
+        </typedef>
+    </target>
+    <target name="jaxb-clean-code-generation" depends="clean,jaxb-code-generation"/>
+    <target name="jaxb-code-generation" depends="xjc-typedef-target,-do-init,-init-macrodef-javac">
+        <mkdir xmlns:s="http://xml.netbeans.org/schema/JAXBWizConfig" dir="${build.generated.sources.dir}/jaxb"/>
+        <mkdir xmlns:s="http://xml.netbeans.org/schema/JAXBWizConfig" dir="build/generated/jaxbCache"/>
+        <mkdir dir="build/generated/jaxbCache/Response"/>
+        <xjc package="com.sivotek.crm.xsd.jaxb.response" destdir="build/generated/jaxbCache/Response" catalog="catalog.xml">
+            <classpath>
+                <pathelement location="${src.dir}"/>
+                <pathelement path="${jaxbwiz.xjcrun.classpath}"/>
+            </classpath>
+            <arg value="-xmlschema"/>
+            <schema file="src/conf/xml-resources/jaxb/Response/TranscendResponse.xsd"/>
+            <depends file="src/conf/xml-resources/jaxb/Response/TranscendResponse.xsd"/>
+            <produces dir="build/generated/jaxbCache/Response"/>
+        </xjc>
+        <copy todir="${build.generated.sources.dir}/jaxb">
+            <fileset dir="build/generated/jaxbCache/Response"/>
+        </copy>
+        <mkdir dir="build/generated/jaxbCache/Request"/>
+        <xjc package="com.sivotek.crm.xsd.jaxb.request" destdir="build/generated/jaxbCache/Request" catalog="catalog.xml">
+            <classpath>
+                <pathelement location="${src.dir}"/>
+                <pathelement path="${jaxbwiz.xjcrun.classpath}"/>
+            </classpath>
+            <arg value="-xmlschema"/>
+            <schema file="src/conf/xml-resources/jaxb/Request/TranscendRequest.xsd"/>
+            <depends file="src/conf/xml-resources/jaxb/Request/TranscendRequest.xsd"/>
+            <produces dir="build/generated/jaxbCache/Request"/>
+        </xjc>
+        <copy todir="${build.generated.sources.dir}/jaxb">
+            <fileset dir="build/generated/jaxbCache/Request"/>
+        </copy>
+        <!--*** Web project javac macro does not support sourcepath attribute, so do not pass "sourcepath=${src.dir}"-->
+    </target>
+</project>

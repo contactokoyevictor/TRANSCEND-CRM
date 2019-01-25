@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="TRANSCEND-CRM_CLOUD_TOMEEPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.sivotek.crm.persistent.dao.entities.Appointment</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Approval</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Category</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Company</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Companyaccountstack</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Companyaccountstackcd</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Companyaccountstackdocs</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Companyaddresstype</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Companybank</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Companycontacts</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Companycontactsaddress</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Companycustomer</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Companydepartment</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Companyemployee</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Companyemployeeaddress</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Companyhirarchie</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Companypayments</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Companypaymentscheme</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Companyproduct</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Companyproductcategory</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Companyproducttype</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Compnaypaymentcurrency</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Componentattachments</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Componenttype</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Contenttypes</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmbillingtype</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmcampaign</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmcampaigndocs</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmcampaignposition</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmcampaignprops</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmcampaignreceiver</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmcampaignstatus</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmemployeecontacts</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmemployeenote</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmexpense</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmexpensetype</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmforum</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmforumdocs</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmforumteammembers</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmlabor</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmlabortype</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmlicense</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmlicensecode</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmlicenseperiodity</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmlicensetype</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmmessagechannel</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmmessagechanneltemplate</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmmessagehistory</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmmodules</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmprofilesettings</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmproject</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmprojectprops</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmprojectstatus</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmprojecttask</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmprojectteammembers</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmprojectticketmanagement</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmprojectticketnotification</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmscheduler</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmschedulerefcode</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmschedulerevnttype</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmsubmodules</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmusermodules</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmusers</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmvisitor</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmvisitorcontacts</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmvisitorcontactsaddress</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmworkorder</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmworkorderresolution</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmworkordersettings</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Crmworkordertype</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Customerbank</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Customercategory</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Customercontacts</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Customercontactsaddress</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Employeedesignation</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Productattachments</class>
+    <class>com.sivotek.crm.persistent.dao.entities.Productcomponents</class>
+    <class>com.sivotek.crm.persistent.dao.entities.TimeZones</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sivotekcrm_"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>

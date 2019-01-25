@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<request>
+<page>
+<appkey>1122670696</appkey>
+<companyid>12</companyid>
+<elements>
+<element id="RemoveReminder">
+<scheduleID>14</scheduleID>
+<scheduleGroup>cron</scheduleGroup>
+</element>
+</elements>
+</page>
+</request>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<server>
+<mbean code="org.apache.openejb.quartz.ee.jmx.jboss.QuartzService" name="user:service=QuartzService,name=QuartzService">
+<!--       JNDI name for locating Scheduler, "Quartz" is default.     -->
+
+<attribute name="JndiName">Quartz</attribute>
+<attribute name="Properties">
+# Default Properties file for use by StdSchedulerFactory
+# to create a Quartz Scheduler Instance, if a different
+# properties file is not explicitly specified.
+
+org.quartz.scheduler.instanceName = TRANSCEND-CRM_PLATFORM
+#org.quartz.scheduler.instanceId = AUTO
+
+org.quartz.threadPool.class = org.quartz.simpl.SimpleThreadPool
+org.quartz.threadPool.threadCount = 25
+#org.quartz.threadPool.threadPriority = 5
+
+org.quartz.threadPool.threadsInheritContextClassLoaderOfInitializingThread = true
+
+# Using JobStoreTX
+## Be sure to run the appropriate script(under docs/dbTables) first to create database/tables
+org.quartz.jobStore.class = org.quartz.impl.jdbcjobstore.JobStoreTX
+
+# Configuring JDBCJobStore with the Table Prefix
+org.quartz.jobStore.tablePrefix = QRTZ_
+
+# Using DriverDelegate
+org.quartz.jobStore.driverDelegateClass = org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+
+# Using datasource
+org.quartz.jobStore.dataSource = QuartzDS
+# Define the datasource to use
+org.quartz.dataSource.QuartzDS.driver = com.mysql.jdbc.Driver
+org.quartz.dataSource..URL = jdbc:mysql://localhost:3306/quartz
+org.quartz.dataSource.QuartzDS.user = root
+org.quartz.dataSource.QuartzDS.password = 
+org.quartz.dataSource.QuartzDS.maxConnections = 30
+
+org.quartz.jobStore.maxMisfiresToHandleAtATime=100
+org.quartz.jobStore.misfireThreshold = 60000
+
+
+</attribute>
+
+</mbean>

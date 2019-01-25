@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="page">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="elements">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="element">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="elementstatus"/>
+                          <xs:element minOccurs="0" name="elementstatusmessage"/>
+                          
+                           <xs:element name="scheduleID" minOccurs="0"/>
+                           <xs:element name="scheduleGroup" minOccurs="0"/>
+                           <xs:element name="seconds" minOccurs="0"/>
+                           <xs:element name="minutes" minOccurs="0"/>
+                           <xs:element name="hour" minOccurs="0"/>
+                           <xs:element name="dayOfMonth" minOccurs="0"/>
+                           <xs:element name="month" minOccurs="0"/>
+                           <xs:element name="weekdays" minOccurs="0"/>
+                           <xs:element name="year" minOccurs="0"/>
+                           <xs:element name="timeZoneName" minOccurs="0"/>
+                           <xs:element name="appkey" minOccurs="0"/>
+                           <xs:element name="createdby" minOccurs="0"/>
+                           <xs:element name="changedby" minOccurs="0"/>       
+                           <xs:element name="eventtypeid" minOccurs="0"/>
+                          
+                           <xs:element name="publickey" minOccurs="0"/>
+                           <xs:element name="employeeid" minOccurs="0"/>
+                           <xs:element name="companyid" minOccurs="0"/>
+                           <xs:element name="companyname" minOccurs="0"/>
+                           <xs:element name="companysubname" minOccurs="0" />
+                           <xs:element name="companyphone" minOccurs="0" />
+                           <xs:element name="companyfax" minOccurs="0" />
+                           <xs:element name="companyemail" minOccurs="0"/>
+                           <xs:element name="companyweb" minOccurs="0" />
+                           <xs:element name="companycategory" minOccurs="0" />
+                           <xs:element name="companymotto" minOccurs="0" />
+                           <xs:element name="companylogo" minOccurs="0"/>
+                           <xs:element name="load" minOccurs="0"/>
+                           <xs:element name="delete" minOccurs="0"/>
+                           <xs:element name="categoryid" minOccurs="0"/>
+                          
+                          <xs:element name="departmentid" minOccurs="0" />
+
+
+
+
+                          <xs:element name="notespool" minOccurs="0"/>
+                          <xs:element name="billname" minOccurs="0"/>
+                          <xs:element name="workordername" minOccurs="0"/>
+                          <xs:element name="workordertypeid" minOccurs="0"/>
+                          <xs:element name="customerid" minOccurs="0"/>
+                          <xs:element name="productid" minOccurs="0"/>
+                          <xs:element name="componentid" minOccurs="0"/>
+                          <xs:element name="workorderid" minOccurs="0"/>
+                          <xs:element name="instruction" minOccurs="0"/>
+                          <xs:element name="isDone" minOccurs="0"/>
+                          <xs:element name="comment" minOccurs="0"/>
+                          <xs:element name="billtypeid" minOccurs="0"/>
+                          <xs:element name="workperformed" minOccurs="0"/>
+                          <xs:element name="specialinstruction" minOccurs="0"/>
+                          <xs:element name="customerfailure" minOccurs="0"/>
+                          <xs:element name="correctiveaction" minOccurs="0"/>
+                          <xs:element name="failurelocation" minOccurs="0"/>
+                          <xs:element name="failedassembly" minOccurs="0"/>
+                          <xs:element name="howfixed" minOccurs="0"/>
+                          <xs:element name="symptom" minOccurs="0"/>
+                          <xs:element name="rootcause" minOccurs="0"/>
+                          <xs:element name="expensename" minOccurs="0"/>
+                          <xs:element name="expensetypeid" minOccurs="0"/>
+                          <xs:element name="lineqty" minOccurs="0"/>
+                          <xs:element name="estimatedcost" minOccurs="0"/>
+                          <xs:element name="isBillable" minOccurs="0"/>
+                          <xs:element name="laborname" minOccurs="0"/>
+                          <xs:element name="labortypeid" minOccurs="0"/>
+                                 
+                          
+                          <xs:element name="bankname" minOccurs="0"/>
+                          <xs:element name="bankid" minOccurs="0"/>
+                          <xs:element name="bankaccount"/>
+                          <xs:element name="bankIBAN" minOccurs="0"/>
+                          <xs:element name="bankcountry" minOccurs="0"/>
+                          <xs:element name="isDefault" minOccurs="0"/>
+                          <xs:element name="accountnr" minOccurs="0"/>
+                          <xs:element name="accounttype" minOccurs="0"/>
+                          <xs:element name="accounttaxtype" minOccurs="0"/>
+                          <xs:element name="accountdebit" minOccurs="0"/>
+                          <xs:element name="accountcredit" minOccurs="0"/>
+                          <xs:element name="account_d_name" minOccurs="0"/>
+                          <xs:element name="account_c_name" minOccurs="0"/>
+                          <xs:element name="account_d_value" minOccurs="0"/>
+                          <xs:element name="account_c_value" minOccurs="0"/>
+                          <xs:element name="accountname" minOccurs="0"/>
+                          <xs:element name="accountvalue" minOccurs="0"/>
+                          <xs:element name="accountstackid" minOccurs="0"/>
+                          <xs:element name="creditnumber" minOccurs="0"/>
+                          <xs:element name="creditname" minOccurs="0"/>
+                          <xs:element name="creditvalue" minOccurs="0"/>
+                          <xs:element name="credittaxtname" minOccurs="0"/>
+                          <xs:element name="credittype" minOccurs="0"/>
+                          <xs:element name="accountid" minOccurs="0"/>
+                          <xs:element name="customer_name" minOccurs="0"/>
+                          <xs:element name="customer_subname" minOccurs="0"/>
+                          <xs:element name="customer_alias" minOccurs="0"/>
+                          <xs:element name="customer_email" minOccurs="0"/>
+                          <xs:element name="customer_web" minOccurs="0"/>
+                          <xs:element name="customer_logo" minOccurs="0"/>
+                          <xs:element name="customer_motto" minOccurs="0"/>
+                          <xs:element name="customer_categoryid" minOccurs="0"/>
+                          <xs:element name="customer_firstname" minOccurs="0"/>
+                          <xs:element name="customer_lastname" minOccurs="0"/>
+                          <xs:element name="customer_othername" minOccurs="0"/>
+                          <xs:element name="customer_phone" minOccurs="0"/>
+                          <xs:element name="customer_fax" minOccurs="0"/>
+                          <xs:element name="customer_mobile" minOccurs="0"/>
+                          <xs:element name="customer_contactid" minOccurs="0"/>
+                          <xs:element name="customer_addresstypeid" minOccurs="0"/>
+                          <xs:element name="customer_street" minOccurs="0"/>
+                          <xs:element name="customer_zip" minOccurs="0"/>
+                          <xs:element name="customer_location" minOccurs="0"/>
+                          <xs:element name="customer_pbox" minOccurs="0"/>
+                          <xs:element name="customer_country" minOccurs="0"/>
+                          <xs:element name="product_name" minOccurs="0"/>
+                          <xs:element name="product_typeid" minOccurs="0"/>
+                          <xs:element name="product_categoryid" minOccurs="0"/>
+                          <xs:element name="product_manufacturer" minOccurs="0"/>
+                          <xs:element name="product_serialnumber" minOccurs="0"/>
+                          <xs:element name="attachment_name" minOccurs="0"/>
+                          <xs:element name="contenttypeid" minOccurs="0"/>
+                          <xs:element name="attachment" minOccurs="0"/>
+                          <xs:element name="filename" minOccurs="0"/>
+                          <xs:element name="component_name" minOccurs="0"/>
+                          <xs:element name="component_typeid" minOccurs="0"/>
+                          <xs:element name="quantity" minOccurs="0"/>
+                          <xs:element name="workorderinstructionid" minOccurs="0"/>
+                          <xs:element name="workorderresolutionid" minOccurs="0"/>
+                          
+                          
+                           <xs:element name="password" minOccurs="0"/>	
+                           <xs:element name="userid" minOccurs="0"/>
+                           <xs:element name="isadmin" minOccurs="0"/>	
+                           <xs:element name="addresstypeid" minOccurs="0"/>
+                           <xs:element name="addresstypename" minOccurs="0"/>
+                           
+                           <xs:element name="contactsid" minOccurs="0"/>
+                           <xs:element name="firstname" minOccurs="0"/>
+                           <xs:element name="lastname" minOccurs="0"/>
+                           <xs:element name="othername" minOccurs="0"/>
+                           <xs:element name="phone" minOccurs="0"/>
+                           <xs:element name="fax" minOccurs="0"/>
+                           <xs:element name="mobile" minOccurs="0"/>
+                           <xs:element name="email" minOccurs="0"/> 
+                            
+                           
+                           <xs:element name="addressid" minOccurs="0"/>
+                           <xs:element name="street" minOccurs="0"/>
+                           <xs:element name="zip" minOccurs="0"/>
+                           <xs:element name="location" minOccurs="0"/>
+                           <xs:element name="pbox" minOccurs="0"/>
+                           <xs:element name="country" minOccurs="0"/>
+                              
+                           <xs:element name="contenttype" minOccurs="0"/>
+                           <xs:element name="maxsize" minOccurs="0"/>
+                           <xs:element name="minsize" minOccurs="0"/>
+                                      
+                           <xs:element name="moduleid" minOccurs="0"/>
+                           <xs:element name="modulename" minOccurs="0"/>
+                           <xs:element name="moduleurl" minOccurs="0"/>
+                                
+                           <xs:element name="canread" minOccurs="0"/>
+                           <xs:element name="canwrite" minOccurs="0"/>
+                           <xs:element name="candelete" minOccurs="0"/>      
+                           
+                            
+                          <xs:element name="name" minOccurs="0"/>
+                          <xs:element name="code" minOccurs="0"/>
+                          <xs:element name="heads" minOccurs="0"/>
+                          <xs:element name="description" minOccurs="0"/>
+
+                          <xs:element name="schemeid" minOccurs="0"/>
+                         
+                          <xs:element name="currencyid" minOccurs="0"/>
+                          <xs:element name="currencyname" minOccurs="0"/>
+                          <xs:element name="currencycode" minOccurs="0"/>
+                          <xs:element name="currencysymbol" minOccurs="0"/>
+                            
+                          <xs:element name="paymentid" minOccurs="0"/>
+                          <xs:element name="amount" minOccurs="0"/>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+                          <xs:element name="designationid" minOccurs="0"/>
+                          <xs:element name="designationname" minOccurs="0"/>
+                           
+                           <xs:element name="companyemployee_id" minOccurs="0"/>
+                           <xs:element name="designation" minOccurs="0"/>
+                                 
+                            
+                           <xs:element name="employeeaddressid" minOccurs="0"/>
+                            
+                           <xs:element name="hirarchieid" minOccurs="0"/>
+                           <xs:element name="root" minOccurs="0"/>
+                           <xs:element name="parent" minOccurs="0"/>
+
+                            
+                           <xs:element name="timeZoneid" minOccurs="0"/>
+                           <xs:element name="coordinates" minOccurs="0"/>
+                           <xs:element name="timezone" minOccurs="0"/>
+                           <xs:element name="comments" minOccurs="0"/>
+                           <xs:element name="UTCoffset" minOccurs="0"/>
+                           <xs:element name="TCDSToffset" minOccurs="0"/>
+                           <xs:element name="Notes" minOccurs="0"/> 
+
+                           <xs:element name="schedulerid" minOccurs="0"/>
+                           <xs:element name="activeweekdays" minOccurs="0"/>
+                           <xs:element name="frequencytype" minOccurs="0"/>
+                           <xs:element name="scheduletype" minOccurs="0"/>
+                           <xs:element name="color" minOccurs="0"/>
+                           <xs:element name="startdate" minOccurs="0"/>
+                           <xs:element name="enddate" minOccurs="0"/>
+                           <xs:element name="lastrun" minOccurs="0"/>
+                           <xs:element name="nextrun" minOccurs="0"/>
+                           <xs:element name="callbackurl" minOccurs="0"/>  
+                           <xs:element name="callbackaction" minOccurs="0"/>  
+                           <xs:element name="schedulestatus" minOccurs="0"/>  
+                            
+                           <xs:element name="schedulerefcodeid" minOccurs="0"/>
+                           <xs:element name="refcodeid" minOccurs="0"/>
+
+                           <xs:element name="schedulerevnttypeid" minOccurs="0"/>
+                            
+                           <xs:element name="appointmentid" minOccurs="0"/>
+                           <xs:element name="startdatetime" minOccurs="0"/>
+                           <xs:element name="enddatetime" minOccurs="0"/>
+                          
+                           <xs:element name="approvedby" minOccurs="0"/>
+                           <xs:element name="approvaldate" minOccurs="0"/>
+
+                           <xs:element name="visitorid" minOccurs="0"/>
+                           <xs:element name="gender" minOccurs="0"/>
+                           <xs:element name="brithday" minOccurs="0"/>
+                                  
+                           
+                           <xs:element name="contactid" minOccurs="0"/>
+                           
+                           <xs:element name="contactsaddressid" minOccurs="0"/>
+                            
+                            <xs:element name="status"/>
+                           
+                            <xs:element name="appointmentstatus" minOccurs="0"/>
+                            <xs:element name="recipient" minOccurs="0"/>
+                            
+                            <xs:element name="lastupdate" minOccurs="0"/>
+                          
+                            
+                            <xs:element name="campaignid" minOccurs="0"/>
+                            <xs:element name="campaignname" minOccurs="0"/>
+                            <xs:element name="campaignstatus" minOccurs="0"/>
+                            <xs:element name="validityfrom"/>
+                            <xs:element name="validityto"/>
+                        
+                            
+                            <xs:element name="docid" minOccurs="0"/>
+                            <xs:element name="files" minOccurs="0" type="xs:base64Binary"/>
+
+                            <xs:element name="channelid" minOccurs="0"/>
+                            <xs:element name="channelname" minOccurs="0"/>
+                            
+                            
+                            <xs:element name="channeltemplateid" minOccurs="0"/>
+                            <xs:element name="templatename" minOccurs="0"/>
+                            <xs:element name="templatedescription" minOccurs="0"/>
+                            <xs:element name="messagebody" minOccurs="0"/>
+
+                            <xs:element name="receipient" minOccurs="0"/>
+                            <xs:element name="sentdate"/> 
+                          
+                            <xs:element name="projectid" minOccurs="0"/>
+                            <xs:element name="projectnr" minOccurs="0"/>
+                            <xs:element name="manager" minOccurs="0"/>
+                            <xs:element name="budget" minOccurs="0"/>
+                            <xs:element name="actualcost" minOccurs="0"/>
+                            <xs:element name="remaincost" minOccurs="0"/>
+                            <xs:element name="validfrom" minOccurs="0"/>
+                            <xs:element name="validto" minOccurs="0"/> 
+
+
+                            <xs:element name="taskid" minOccurs="0"/>
+                            <xs:element name="parenttaskid" minOccurs="0"/>
+                            <xs:element name="x" minOccurs="0"/>
+                            <xs:element name="y" minOccurs="0"/>
+                            <xs:element name="none" minOccurs="0"/>
+                            <xs:element name="tasktype" minOccurs="0"/>
+                            <xs:element name="duration" minOccurs="0"/>
+                            <xs:element name="done" minOccurs="0"/>
+                           
+                            <xs:element name="teammemberid" minOccurs="0"/>
+
+                         
+                            <xs:element name="issueid" minOccurs="0"/>
+                            <xs:element name="issuesubject" minOccurs="0"/>
+                            <xs:element name="identifiedbyemployeeid" minOccurs="0"/>
+                            <xs:element name="identifieddate" minOccurs="0"/>
+                            <xs:element name="relatedtaskid" minOccurs="0"/>
+                            <xs:element name="assignedto" minOccurs="0"/>
+                            <xs:element name="ticketstatus" minOccurs="0"/>
+                            <xs:element name="environment" minOccurs="0"/>
+                            <xs:element name="priority" minOccurs="0"/>
+                            <xs:element name="targetedresolutiondate"/>
+                            <xs:element name="progress" minOccurs="0"/>
+                            <xs:element name="actualresolutiondate"/>
+                            <xs:element name="lastcomment" minOccurs="0"/>
+
+                          
+                            <xs:element name="notificationid" minOccurs="0"/>
+                            <xs:element name="notificationheader" minOccurs="0"/>
+                            <xs:element name="notificationbody" minOccurs="0"/>
+ 
+                                      
+                          </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="status" />
+        <xs:element name="statusmessage" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

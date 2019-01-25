@@ -1,0 +1,21 @@
+/*
+ * ENTERPRISE RESOURCE PLANNING AND CUSTOMER RELATIONSHIP MANAGEMENT SYSTEM.
+ * DEVELOPED BY OKOYE VICTOR FOR SIVOTEK SOLUTIONS LLC.
+ * ALL RIGHT RESERVED 2014
+ */
+
+
+package com.sivotek.crm.quartz.Job;
+
+/**
+ *
+ * @author okoyevictor
+ */
+public class SMSManager {
+    
+    public void smsMessages()
+    {
+        
+    }
+
+}

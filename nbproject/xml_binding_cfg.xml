@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<schemas xmlns='http://xml.netbeans.org/schema/JAXBWizConfig' destdir='build/generated-sources/jaxb' projectName='TRANSCEND-CRM_CLOUD_TOMEE' version='1.0'>
+	<schema type='-xmlschema' package='com.sivotek.crm.xsd.jaxb.response' name='Response'>
+		<xjc-options>
+		</xjc-options>
+		<schema-sources>
+			<schema-source location='src/conf/xml-resources/jaxb/Response/TranscendResponse.xsd' origLocation='src/java/com/sivotek/crm/xsd/TranscendResponse.xsd'/>
+		</schema-sources>
+		<bindings>
+		</bindings>
+		<catalog/>
+	</schema>
+	<schema type='-xmlschema' package='com.sivotek.crm.xsd.jaxb.request' name='Request'>
+		<xjc-options>
+		</xjc-options>
+		<schema-sources>
+			<schema-source location='src/conf/xml-resources/jaxb/Request/TranscendRequest.xsd' origLocation='src/java/com/sivotek/crm/xsd/TranscendRequest.xsd'/>
+		</schema-sources>
+		<bindings>
+		</bindings>
+		<catalog/>
+	</schema>
+</schemas>

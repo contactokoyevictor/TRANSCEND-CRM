@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED - DO NOT EDIT  ***
+        --><project xmlns:jaxrs="http://www.netbeans.org/ns/jax-rs/1" xmlns:webproject3="http://www.netbeans.org/ns/web-project/3" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:webproject1="http://www.netbeans.org/ns/web-project/1" name="TRANSCEND-CRM_CLOUD_TOMEE-rest-build" basedir="..">
+    <target name="-check-trim">
+        <condition property="do.trim">
+            <and>
+                <isset property="client.urlPart"/>
+                <length length="0" when="greater" string="${client.urlPart}"/>
+            </and>
+        </condition>
+    </target>
+    <target if="do.trim" name="-trim-url">
+        <pathconvert property="rest.base.url" pathsep="/">
+            <propertyset>
+                <propertyref name="client.url"/>
+            </propertyset>
+            <globmapper to="*/" from="*${client.urlPart}"/>
+        </pathconvert>
+    </target>
+    <target unless="do.trim" name="-spare-url">
+        <property value="${client.url}" name="rest.base.url"/>
+    </target>
+    <target depends="run-deploy,-init-display-browser,-check-trim,-trim-url,-spare-url" name="test-restbeans">
+        <replace value="${rest.base.url}||${rest.application.path}" token="${base.url.token}" file="${restbeans.test.file}"/>
+        <condition property="do.browse-url">
+            <istrue value="${display.browser}"/>
+        </condition>
+        <antcall target="browse-url"/>
+    </target>
+    <target if="do.browse-url" name="browse-url">
+        <nbbrowse url="${restbeans.test.url}"/>
+    </target>
+</project>

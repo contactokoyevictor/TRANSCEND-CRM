@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <Resource id="QuartzDS" type="javax.sql.DataSource">#Mon Dec 15 07:07:20 WAT 2014
+jdbcDriver=com.mysql.jdbc.Driver
+password=
+userName=root
+jdbcUrl=jdbc\:mysql\://localhost\:3306/quartz
+</Resource>
+  <Resource id="TranscendCRM_DataSource" type="javax.sql.DataSource">#Tue Feb 03 13:02:29 WAT 2015
+jdbcDriver=com.mysql.jdbc.Driver
+password=
+userName=root
+jdbcUrl=jdbc\:mysql\://localhost\:3306/sivotekcrm_
+</Resource>
+</resources>
